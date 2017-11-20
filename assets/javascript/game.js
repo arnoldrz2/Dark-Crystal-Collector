@@ -1,1 +1,24 @@
-document.
+window.onload = function() {
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+};

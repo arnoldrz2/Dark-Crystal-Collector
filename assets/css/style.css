@@ -1,22 +1,24 @@
-*{
-
-}
-
 h1 {
-	font-style: ;
+	font-family: 'EB Garamond', serif;
+	font-weight: 1000;
 	font-size: 40px;
-	padding: 20px 20px 10px 20px;
+	padding: 20px 20px 20px 20px;
+	color: #ffff00;
+	text-shadow: 1px 2px purple, 0 -1px purple, 2px 1px purple, 0 -1px purple;
 }
 
 h2 {
+	font-family: 'EB Garamond', serif;
 	font-style: ;
 	font-size: 32px;
 	padding: 20px 20px 20px 20px;
 }
 
 p {
+	font-family: 'Rasa', serif;
 	font-size: 18px;
 	line-height: 22px;
+	padding: 0px 65px 0px 65px;
 }
 
 #background-image {
@@ -42,8 +44,6 @@ p {
   margin: 0 auto;
   z-index: 9999;
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 
@@ -84,6 +84,10 @@ p {
 	.button {
 		width: 35%;
 		margin: 5px;
+	}
+	#content {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 }
