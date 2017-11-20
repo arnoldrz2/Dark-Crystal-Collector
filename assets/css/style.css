@@ -2,10 +2,6 @@
 
 }
 
-body {
-
-}
-
 h1 {
 	font-style: ;
 	font-size: 40px;
@@ -19,8 +15,38 @@ h2 {
 }
 
 p {
-	font-size: 18px
+	font-size: 18px;
+	line-height: 22px;
 }
+
+#background-image {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;                      
+  background-repeat: no-repeat;
+  background-position: center center;  
+  background-image: url('../images/DC5.png');
+  filter: blur(4px);
+}
+
+#content{
+  position: fixed;
+  text-align: center;
+  left: 0;
+  right: 0;
+  max-width: 960px;
+  height: 1800px;
+  background-color: #000000ab;
+  margin: 0 auto;
+  z-index: 9999;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
 
 #instructions {
 	padding: 10px 20px 10px 20px;
@@ -41,3 +67,30 @@ p {
 #button-box {
 	padding: 10px 20px 10px 20px;
 }
+
+.button {
+	width: 20%;
+	margin: 5px;
+}
+
+
+
+
+
+/*Media Screens*/
+
+/*Tablet*/
+@media screen and (max-width: 959px) {
+	.button {
+		width: 35%;
+		margin: 5px;
+	}
+
+}
+
+
+
+/*Google Fonts*/
+/*font-family: 'Rasa', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Domine', serif;*/
