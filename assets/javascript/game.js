@@ -18,8 +18,11 @@ $(document).ready(function(){
 		var targetNumber = Math.floor(Math.random() * (121 - 19) + 19);
 		$('#target-number').html(targetNumber);
 
-		// Random Button Number Generator
-		var images = ['assets/images/DC1.jpg', 'assets/images/DC2.jpg', 'assets/images/DC3.png', 'assets/images/DC4.jpg']
+		// Random Number Generator for Buttons/Images
+		var img1 = 'assets/images/DC1.jpg'
+		var img2 = 'assets/images/DC2.jpg'
+		var img3 = 'assets/images/DC3.png'
+		var img4 = 'assets/images/DC4.jpg'
 
 		var numberOptions1 = [1, 5, 9];
 		var numberOptions2 = [2, 6, 10];
@@ -31,16 +34,31 @@ $(document).ready(function(){
 		var number3 = numberOptions3[Math.floor(Math.random() * numberOptions3.length)];
 		var number4 = numberOptions4[Math.floor(Math.random() * numberOptions4.length)];
 
-		for (var i = 0; i < images.length; i++) {
-			var imgCharacter = $('<img>');
-			$(imgCharacter).addClass('button');
-			$(imgCharacter).attr('src', images[i]);
-			$(imgCharacter).attr('value', number1);
-			$('#button-box').append(imgCharacter);
-		}
+		//Assign Number Value and Image to Buttons
+		var imgCharacter1 = $('<img>');
+			$(imgCharacter1).addClass('button');
+			$(imgCharacter1).attr('src', img1);
+			$(imgCharacter1).attr('value', number1);
+			$('#button-box').append(imgCharacter1);
 
+		var imgCharacter2 = $('<img>');
+			$(imgCharacter2).addClass('button');
+			$(imgCharacter2).attr('src', img2);
+			$(imgCharacter2).attr('value', number2);
+			$('#button-box').append(imgCharacter2);
 
-		//Assign Numbers to Buttons
+		var imgCharacter3 = $('<img>');
+			$(imgCharacter3).addClass('button');
+			$(imgCharacter3).attr('src', img3);
+			$(imgCharacter3).attr('value', number3);
+			$('#button-box').append(imgCharacter3);
+
+		var imgCharacter4 = $('<img>');
+			$(imgCharacter4).addClass('button');
+			$(imgCharacter4).attr('src', img4);
+			$(imgCharacter4).attr('value', number4);
+			$('#button-box').append(imgCharacter4);
+
 
 
 
