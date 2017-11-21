@@ -12,8 +12,8 @@ $(document).ready(function(){
 	})
 
 	function gameStart() {
-
 		var userNumber = 0;
+
 		// Random Target Number Generator
 		var targetNumber = Math.floor(Math.random() * (121 - 19) + 19);
 		$('#target-number').html(targetNumber);
@@ -24,10 +24,10 @@ $(document).ready(function(){
 		var img3 = 'assets/images/DC3.png'
 		var img4 = 'assets/images/DC4.jpg'
 
-		var numberOptions1 = [1, 5, 9];
-		var numberOptions2 = [2, 6, 10];
-		var numberOptions3 = [3, 7, 11];
-		var numberOptions4 = [4, 8, 12];
+		var numberOptions1 = [11, 3, 5];
+		var numberOptions2 = [12, 4, 6];
+		var numberOptions3 = [7, 9, 1];
+		var numberOptions4 = [8, 10, 2];
 
 		var number1 = numberOptions1[Math.floor(Math.random() * numberOptions1.length)];
 		var number2 = numberOptions2[Math.floor(Math.random() * numberOptions2.length)];
@@ -60,14 +60,13 @@ $(document).ready(function(){
 			$('#button-box').append(imgCharacter4);
 
 
-
-
 		// Button Click Functions
-		// $("#box-1").on("click", function(){
-
-		// 	userNumber += this.value;
-		// 	$("#your-number").html(userNumber);
-		// });
+		$(".button").on("click", function(){
+			var imgValue = ($(this).attr('value'));
+			imgValue = parseInt(imgValue);
+			userNumber += imgValue;
+			$("#user-number").html(userNumber);
+		});
 
 
 		// User Number

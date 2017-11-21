@@ -35,18 +35,18 @@ strong {
   background-repeat: no-repeat;
   background-position: center center;  
   background-image: url('../images/DC5.png');
-  filter: blur(4px);
+  filter: blur(3px);
 }
 
 #content{
   position: fixed;
+  margin: 0 auto;
   text-align: center;
   left: 0;
   right: 0;
   max-width: 960px;
   height: 1800px;
   background-color: #000000ab;
-  margin: 0 auto;
   color: white;
 }
 
