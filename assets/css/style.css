@@ -9,9 +9,10 @@ h1 {
 
 h2 {
 	font-family: 'EB Garamond', serif;
-	font-style: ;
 	font-size: 32px;
 	padding: 20px 20px 20px 20px;
+	color: #ffff00;
+	text-shadow: 1px 2px purple, 0 -1px purple, 2px 1px purple, 0 -1px purple;
 }
 
 p {
@@ -19,6 +20,10 @@ p {
 	font-size: 18px;
 	line-height: 22px;
 	padding: 0px 65px 0px 65px;
+}
+
+strong {
+	color: #ffff00;
 }
 
 #background-image {

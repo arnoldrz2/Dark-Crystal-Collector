@@ -3,9 +3,11 @@ var wins = 0;
 var losses = 0;
 
 $(document).ready(function(){
-
+	$("#game-area").hide();
+	
 	$(".start-button").one("click", function(){
 	$(".start-button").remove();
+	$("#game-area").show();
 	gameStart();
 	})
 
