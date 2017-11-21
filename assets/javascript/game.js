@@ -21,23 +21,27 @@ $(document).ready(function(){
 
 		//Assign Numbers to Buttons
 		function setNumVal1 () {
-			document.getElementById('box-1').value = box1;
+			document.getElementById("#box-1").value = box1;
 		}
 
 		function setNumVal2 () {
-			document.getElementById('box-2').value = box2;
+			document.getElementById("#box-2").value = box2;
 		}
 
 		function setNumVal3 () {
-			document.getElementById('box-3').value = box3;
+			document.getElementById("#box-3").value = box3;
 		}
 
 		function setNumVal4 () {
-			document.getElementById('box-4').value = box4;
+			document.getElementById("#box-4").value = box4;
 		}
 
 		// Button Click Functions
+		$("#box-1").on("click", function(){
 
+			userNumber += this.value;
+			$("#your-number").html(userNumber);
+		});
 
 
 		// User Number
