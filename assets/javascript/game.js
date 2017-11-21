@@ -69,17 +69,18 @@ $(document).ready(function(){
 		});
 
 
-		// User Number
-	
-
-
-
-
 		// Win/Lose Condition
+		function winCondition() {
+			if (usernumber === targetnumber) {
+				alert("You win! The dark powers of the Crytals is now yours!");
+
+			}
+		}
+
+
 
 
 	}	
-
 });
 
 	// Wins/Losses Counters
