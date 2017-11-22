@@ -1,12 +1,14 @@
 //Starting Stats
 var wins = 0;
-var losses = 0;
+var loses = 0;
 
-$(document).ready(function(){
+$(document).ready(function loadGame(){
+	$(".button").remove();
 	$("#game-area").hide();
-	
+	$(".start-button").show();
+	$("#user-number").html(0);
 	$(".start-button").one("click", function(){
-	$(".start-button").remove();
+	$(".start-button").hide();
 	$("#game-area").show();
 	gameStart();
 	})
@@ -66,24 +68,49 @@ $(document).ready(function(){
 			imgValue = parseInt(imgValue);
 			userNumber += imgValue;
 			$("#user-number").html(userNumber);
+			winCondition()
+			loseCondition()
+
 		});
 
 
 		// Win/Lose Condition
 		function winCondition() {
-			if (usernumber === targetnumber) {
-				alert("You win! The dark powers of the Crytals is now yours!");
-
+			if (userNumber === targetNumber) {
+				winCounter();
 			}
 		}
 
-
-
-
+		function loseCondition() {
+			if (userNumber > targetNumber){
+				loseCounter();				
+			}
+		}
 	}	
-});
+
 
 	// Wins/Losses Counters
+	function winCounter () {
+		wins++;
+		$("#wins").html(wins);
+		alert("You win! Yay, I'm so happy for you. :)");
+		alert("Click the button below to play again!");
+		loadGame()	
+	}
+
+	function loseCounter () {
+		loses++;
+		$("#loses").html(loses);
+		alert("You lose! Sorry, dood... :(");
+		alert("Click the button below to play again!");
+		loadGame()
+	}
+
+
+
+});
+
+
 
 
 
